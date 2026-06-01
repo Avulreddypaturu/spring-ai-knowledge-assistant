@@ -1,4 +1,4 @@
-package com.gh.ai.knowledgeassistant;
+package com.gh.ai.knowledgeassistant.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
