@@ -1,6 +1,7 @@
 package com.gh.ai.knowledgeassistant.controller;
 
 import com.gh.ai.knowledgeassistant.domain.Document;
+import com.gh.ai.knowledgeassistant.domain.DocumentStatus;
 import com.gh.ai.knowledgeassistant.repository.DocumentRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -21,6 +22,9 @@ public class TestController {
                 .title("Test Document")
                 .fileName("test.pdf")
                 .contentType("application/pdf")
+                .fileSize(1024L)
+                .status(DocumentStatus.UPLOADED)
+                .uploadedBy("system")
                 .uploadedAt(LocalDateTime.now())
                 .build();
 
